@@ -1,0 +1,42 @@
+  <header role="banner">
+    {{ page.header }}
+  </header>
+
+
+  <div class="subheader container-fluid">
+  <div class="row">
+  <div class="col">
+      {{ page.subheader_left}}
+  </div>
+  <div class="col">
+      {{ page.subheader_right}}
+  </div>
+  </div>
+  </div>
+
+<main role="main">
+<div class="container">
+<div class="row">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    <div class="layout-content col-9">
+      {{ page.content }}
+    </div>{# /.layout-content #}
+
+    {% if page.sidebar %}
+      <aside class="layout-sidebar-first col" role="complementary">
+        {{ page.sidebar }}
+      </aside>
+    {% endif %}
+
+</div>
+</div>{# /container #}
+</main>
+
+  {% if page.footer %}
+    <footer role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
+

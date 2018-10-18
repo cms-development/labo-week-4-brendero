@@ -1,0 +1,17 @@
+header img {
+  width: 5%;
+  float: left;
+}
+header {
+  background: #1B0000;
+}
+.subheader .col {
+  background: #F8AF3E;
+}
+header .navbar {
+  width: 95%;
+}
+.layout-sidebar-first {
+  background: #1B0000;
+  color: white;
+}
